@@ -1,11 +1,17 @@
 #include "RockScissorsPaperGame.h"
 #pragma once
 #include <iostream>
+#include <random>
 
 void RockScissorsPaperGame::startGame() {
 	std::cout << "Welcome to Rock-Scissors-Paper Game!" << std::endl;
 
-	// TODO generate random number
+	// generate random number
+	std::random_device seed_gen;
+	std::mt19937 engine(seed_gen());
+	std::uniform_int_distribution<> distribution(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
+	std::int16_t random_num = distribution(engine);
+	STATUS npc = static_cast<STATUS>(random_num);
 
 	// TODO repeat until someone wins 3 times
 

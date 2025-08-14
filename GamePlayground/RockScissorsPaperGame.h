@@ -19,5 +19,7 @@ private:
     };
 
     // TODO: define variable
+    static constexpr int MIN_RANDOM_NUMBER = 0;
+    static constexpr int MAX_RANDOM_NUMBER = 2;
 };
 
