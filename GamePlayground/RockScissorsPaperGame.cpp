@@ -16,7 +16,12 @@ void RockScissorsPaperGame::startGame() {
 		std::int16_t random_num = distribution(engine);
 		STATUS npc = static_cast<STATUS>(random_num);
 
-		// TODO player input number
+		// player input number
+		while (true) {
+			std::cout << "Please input number 0:ROCK 1:SCISSORS 2:PAPER" << std::endl;
+			std::cin >> _input_number;
+			if (_input_number == 0 || _input_number == 1 || _input_number || 2) break;
+		}
 
 		// TODO rock scissors paper judgement
 
