@@ -24,9 +24,27 @@ void RockScissorsPaperGame::startGame() {
 		}
 		STATUS player = static_cast<STATUS>(_input_number);
 
-		// TODO rock scissors paper judgement
+		// rock scissors paper judgement
+		std::string result;
+		switch (player) {
+		case STATUS::ROCK:
+			if (npc == STATUS::ROCK) result = "draw";
+			else if (npc == STATUS::SCISSORS) { result = "win"; _player_win_count++; }
+			else if (npc == STATUS::PAPER) { result = "lose"; _npc_win_count++; }
+			break;
+		case STATUS::SCISSORS:
+			if (npc == STATUS::ROCK) { result = "lose"; _npc_win_count++; }
+			else if (npc == STATUS::SCISSORS) result = "draw";
+			else if (npc == STATUS::PAPER) { result = "win"; _player_win_count++; }
+			break;
+		case STATUS::PAPER:
+			if (npc == STATUS::ROCK) { result = "win"; _player_win_count++; }
+			else if (npc == STATUS::SCISSORS) { result = "lose"; _npc_win_count++; }
+			else if (npc == STATUS::PAPER) result = "draw";
+			break;
+		}
 
-		// TODO display the ongoing result
+		std::cout << result << std::endl;
 	}
 	// TODO display the final result(winner and player winning rate)
 
