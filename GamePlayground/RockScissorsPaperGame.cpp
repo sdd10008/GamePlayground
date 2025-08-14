@@ -5,6 +5,8 @@
 
 void RockScissorsPaperGame::startGame() {
 	std::cout << "Welcome to Rock-Scissors-Paper Game!" << std::endl;
+	_player_win_count = 0;
+	_npc_win_count = 0;
 
 	// generate random number
 	std::random_device seed_gen;
