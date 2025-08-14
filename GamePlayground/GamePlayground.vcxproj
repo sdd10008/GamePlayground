@@ -124,6 +124,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GamePlayground.cpp" />
+    <ClCompile Include="NumberGuessingGame.cpp" />
+    <ClCompile Include="RockScissorsPaperGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="NumberGuessingGame.h" />
+    <ClInclude Include="RockScissorsPaperGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
