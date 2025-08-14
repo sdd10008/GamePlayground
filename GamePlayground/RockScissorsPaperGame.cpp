@@ -22,6 +22,7 @@ void RockScissorsPaperGame::startGame() {
 			std::cin >> _input_number;
 			if (_input_number == 0 || _input_number == 1 || _input_number || 2) break;
 		}
+		STATUS player = static_cast<STATUS>(_input_number);
 
 		// TODO rock scissors paper judgement
 
