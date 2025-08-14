@@ -9,18 +9,19 @@ void RockScissorsPaperGame::startGame() {
 	// generate random number
 	std::random_device seed_gen;
 	std::mt19937 engine(seed_gen());
-	std::uniform_int_distribution<> distribution(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
-	std::int16_t random_num = distribution(engine);
-	STATUS npc = static_cast<STATUS>(random_num);
+	std::uniform_int_distribution<> distribution(_MIN_RANDOM_NUMBER, _MAX_RANDOM_NUMBER);
 
-	// TODO repeat until someone wins 3 times
+	// repeat until someone wins 3 times
+	while (_player_win_count < _WINNING_CONDITION && _npc_win_cout < _WINNING_CONDITION) {
+		std::int16_t random_num = distribution(engine);
+		STATUS npc = static_cast<STATUS>(random_num);
 
-	// TODO player input number
+		// TODO player input number
 
-	// TODO rock scissors paper judgement
+		// TODO rock scissors paper judgement
 
-	// TODO display the ongoing result
-
+		// TODO display the ongoing result
+	}
 	// TODO display the final result(winner and player winning rate)
 
 	std::cout << "Thank you for playing the Rock-Scissors-Paper Game!" << std::endl;

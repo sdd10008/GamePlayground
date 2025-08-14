@@ -19,7 +19,11 @@ private:
     };
 
     // TODO: define variable
-    static constexpr int MIN_RANDOM_NUMBER = 0;
-    static constexpr int MAX_RANDOM_NUMBER = 2;
+    static constexpr int _MIN_RANDOM_NUMBER = 0;
+    static constexpr int _MAX_RANDOM_NUMBER = 2;
+    static constexpr int _WINNING_CONDITION = 3;
+    
+    int _player_win_count = 0;
+    int _npc_win_cout = 0;
 };
 
