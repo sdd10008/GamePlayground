@@ -12,7 +12,7 @@ void RockScissorsPaperGame::startGame() {
 	std::uniform_int_distribution<> distribution(_MIN_RANDOM_NUMBER, _MAX_RANDOM_NUMBER);
 
 	// repeat until someone wins 3 times
-	while (_player_win_count < _WINNING_CONDITION && _npc_win_cout < _WINNING_CONDITION) {
+	while (_player_win_count < _WINNING_CONDITION && _npc_win_count < _WINNING_CONDITION) {
 		std::int16_t random_num = distribution(engine);
 		STATUS npc = static_cast<STATUS>(random_num);
 
@@ -46,7 +46,9 @@ void RockScissorsPaperGame::startGame() {
 
 		std::cout << result << std::endl;
 	}
-	// TODO display the final result(winner and player winning rate)
+	// display the final result(winner and player winning rate)
+	std::cout << ((_player_win_count == 3) ? "You Win" : "You Lose") << std::endl;
+	std::cout << "You winning rate:" << (static_cast<double>(_player_win_count) / (_player_win_count + _npc_win_count)) * 100 << "%" << std::endl;
 
 	std::cout << "Thank you for playing the Rock-Scissors-Paper Game!" << std::endl;
 }
