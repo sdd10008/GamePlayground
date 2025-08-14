@@ -1,7 +1,9 @@
 #include "RockScissorsPaperGame.h"
+#pragma once
+#include <iostream>
 
 void RockScissorsPaperGame::startGame() {
-	// TODO display start message
+	std::cout << "Welcome to Rock-Scissors-Paper Game!" << std::endl;
 
 	// TODO generate random number
 
@@ -15,5 +17,5 @@ void RockScissorsPaperGame::startGame() {
 
 	// TODO display the final result(winner and player winning rate)
 
-	// TODO display end message
+	std::cout << "Thank you for playing the Rock-Scissors-Paper Game!" << std::endl;
 }
