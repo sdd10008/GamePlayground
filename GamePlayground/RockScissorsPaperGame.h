@@ -10,5 +10,9 @@ public:
     }
 
     void startGame() override;
+
+    // TODO: define enum
+
+    // TODO: define variable
 };
 
