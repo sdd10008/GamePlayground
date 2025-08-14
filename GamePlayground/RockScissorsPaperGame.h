@@ -11,7 +11,12 @@ public:
 
     void startGame() override;
 
-    // TODO: define enum
+private:
+    enum class STATUS : int {
+        ROCK,
+        SCISSORS,
+        PAPER,
+    };
 
     // TODO: define variable
 };
