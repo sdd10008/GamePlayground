@@ -10,5 +10,7 @@ public:
     }
 
     void startGame() override;
+
+    // TODO define variable
 };
 
