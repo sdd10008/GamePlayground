@@ -1,7 +1,7 @@
 #include "TypingGame.h"
-
+#include <iostream>
 void TypingGame::startGame() {
-	// TODO display start message
+	std::cout << "Start Typing Game!" << std::endl;
 
 	// TODO select difficulty level
 
@@ -19,5 +19,5 @@ void TypingGame::startGame() {
 
 	// TODO display result(typing accuracy)
 
-	// TODO display end message
+	std::cout << "Thank you for playing." << std::endl;
 }
