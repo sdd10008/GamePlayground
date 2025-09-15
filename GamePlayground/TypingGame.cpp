@@ -3,6 +3,7 @@
 #include <chrono>
 #include <thread>
 #include <atomic>
+#include <random>
 
 const std::vector<std::string> TypingGame::EASY_WORD_LIST = { "cat","dog","sun","run","hat","red","big","map","box","jump","fish","ball","book","tree","cake","bird","milk","blue","good","door" };
 const std::vector<std::string> TypingGame::NORMAL_WORD_LIST = { "window","orange","flower","school","family","pretty","banana","yellow","travel","planet","garden","dinner","camera","turtle","market","summer","doctor","pocket","button","animal" };
@@ -43,21 +44,32 @@ void TypingGame::startGame() {
 		throw e;
 	}
 	std::cout << "Start!" << std::endl;
+	totalCount = 0;
+	collectScore = 0;
+	std::random_device rd;
+	std::mt19937 gen(rd());
 	// thread allocatio
 	std::thread t(&TypingGame::timer, this);
 
 	// Repeat during the time limit
 	while (!_timeUp) {
+		std::shuffle(_current_word_list.begin(), _current_word_list.end(), gen);
+		answerStr = _current_word_list[0];
+		std::cout << answerStr << std::endl;
+		std::cin >> inputStr;
+		if (answerStr == inputStr) {
+			std::cout << "collect" << std::endl;
+			totalCount++;
+			collectScore++;
+		}
+		else {
+			std::cout << "incollect" << std::endl;
+			totalCount++;
+		}
 	}
 
 	// join a thread
 	t.join();
-
-	// TODO repeat for a limited time
-
-	// TODO input typing
-
-	// TODO check typo
 
 	// TODO display result(typing accuracy)
 

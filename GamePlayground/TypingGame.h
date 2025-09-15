@@ -22,4 +22,8 @@ private:
     static const std::vector<std::string> HARD_WORD_LIST;
     static const int LIMIT_TIME = 60;
     void timer();
+    std::string inputStr;
+    std::string answerStr;
+    int collectScore;
+    int totalCount;
 };
