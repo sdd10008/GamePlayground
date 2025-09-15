@@ -72,6 +72,11 @@ void TypingGame::startGame() {
 	t.join();
 
 	// TODO display result(typing accuracy)
+	std::cout << "====================" << std::endl;
+	std::cout << "RESULT" << std::endl;
+	std::cout << "TOTAL NUMBER OF QUESTIONS:" << totalCount << std::endl;
+	std::cout << "COLLECT SCORE" << collectScore << std::endl;
+	std::cout << "ACCURACY:" << (static_cast<double>(collectScore) / totalCount) * 100 << std::endl;
 
 	std::cout << "Thank you for playing." << std::endl;
 }
