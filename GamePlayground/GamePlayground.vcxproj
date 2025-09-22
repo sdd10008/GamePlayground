@@ -123,15 +123,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BlackJack.cpp" />
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="Deck.cpp" />
     <ClCompile Include="GamePlayground.cpp" />
     <ClCompile Include="NumberGuessingGame.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="RockScissorsPaperGame.cpp" />
     <ClCompile Include="TypingGame.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BlackJack.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="Deck.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="NumberGuessingGame.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="RockScissorsPaperGame.h" />
     <ClInclude Include="TypingGame.h" />
   </ItemGroup>
