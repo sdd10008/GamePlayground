@@ -7,6 +7,7 @@
 #include "RockScissorsPaperGame.h"
 #include "TypingGame.h"
 #include "BlackJack.h"
+#include "MazeExplorationGame.h"
 
 int main()
 {
@@ -15,5 +16,6 @@ int main()
 	gm.addGame(std::make_unique<RockScissorsPaperGame>());
 	gm.addGame(std::make_unique<TypingGame>());
 	gm.addGame(std::make_unique<BlackJack>());
+	gm.addGame(std::make_unique<MazeExplorationGame>());
 	gm.run();
 }
