@@ -19,6 +19,12 @@
     <Filter Include="Header Files\BlackJack">
       <UniqueIdentifier>{05e0304a-16b2-4ccc-ad08-91080a38c39b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\MazeExploration">
+      <UniqueIdentifier>{af6e0786-2279-463e-b3ed-3da33fe151bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MazeExploration">
+      <UniqueIdentifier>{18c21ab0-9595-4397-af81-3829845ea8ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GamePlayground.cpp">
@@ -44,6 +50,15 @@
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\BlackJack</Filter>
+    </ClCompile>
+    <ClCompile Include="MazeExplorationGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files\MazeExploration</Filter>
+    </ClCompile>
+    <ClCompile Include="Explorer.cpp">
+      <Filter>Source Files\MazeExploration</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +88,15 @@
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Header Files\BlackJack</Filter>
+    </ClInclude>
+    <ClInclude Include="MazeExplorationGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Explorer.h">
+      <Filter>Header Files\MazeExploration</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Header Files\MazeExploration</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -126,7 +126,10 @@
     <ClCompile Include="BlackJack.cpp" />
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="Explorer.cpp" />
     <ClCompile Include="GamePlayground.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MazeExplorationGame.cpp" />
     <ClCompile Include="NumberGuessingGame.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="RockScissorsPaperGame.cpp" />
@@ -136,8 +139,11 @@
     <ClInclude Include="BlackJack.h" />
     <ClInclude Include="Card.h" />
     <ClInclude Include="Deck.h" />
+    <ClInclude Include="Explorer.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MazeExplorationGame.h" />
     <ClInclude Include="NumberGuessingGame.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="RockScissorsPaperGame.h" />
