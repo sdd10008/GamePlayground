@@ -127,7 +127,9 @@
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Deck.cpp" />
     <ClCompile Include="Explorer.cpp" />
+    <ClCompile Include="GameOfLife.cpp" />
     <ClCompile Include="GamePlayground.cpp" />
+    <ClCompile Include="LifeGame.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="MazeExplorationGame.cpp" />
     <ClCompile Include="NumberGuessingGame.cpp" />
@@ -142,6 +144,8 @@
     <ClInclude Include="Explorer.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameOfLife.h" />
+    <ClInclude Include="LifeGame.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="MazeExplorationGame.h" />
     <ClInclude Include="NumberGuessingGame.h" />
